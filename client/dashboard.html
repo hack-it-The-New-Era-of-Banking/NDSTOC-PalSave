@@ -74,7 +74,7 @@
         <p style="margin: 0.2rem 0; font-size: 0.85rem;">₱1,000/3 • ₱4,000/3</p>
         <p style="color: #facc15; font-size: 0.85rem; margin-top: 0.2rem;">Due this week!</p>
       </div>
-      <button class="btn-small" onclick="alert('✅ Contribute action simulated')">Contribute</button>
+      <button class="btn-small" onclick="alert('Contribute action simulated')">Contribute</button>
     </div>
 
     <!-- Circles to Join -->
@@ -95,7 +95,7 @@
         <h4 style="margin: 0.5rem 0 0;">Gelo’s Circle</h4>
         <p style="margin: 0.2rem 0; font-size: 0.85rem;">₱1,000/3 • ₱4,000/3</p>
       </div>
-      <button class="btn-small" onclick="alert('✅ Joined Gelo’s Circle')">Join</button>
+      <button class="btn-small" onclick="alert(' Joined Gelo’s Circle')">Join</button>
     </div>
   </div>
 
@@ -144,16 +144,114 @@
     </div>
 
     <!-- REWARDS SECTION -->
-    <div id="rewards-section" class="screen">
+    <!-- <div id="rewards-section" class="screen">
       <h2 class="section-title">Rewards</h2>
       <p class="placeholder-text">🎁 Earn rewards for consistent contributions. Claim bonus cycles and cashback here.</p>
+    </div> -->
+
+<!-- SETTINGS// reward now SECTION -->
+<div id="rewards-section" class="screen active">
+  <h2 class="section-title">My Profile</h2>
+
+  <div class="profile-header-card">
+    <div class="profile-header-left">
+      <div class="profile-avatar-img"></div>
+      <div>
+        <h3 class="profile-username">Frank Abegnale</h3>
+        <p class="profile-role">Member</p>
+      </div>
+    </div>
+    <button class="edit-btn">Edit</button>
+  </div>
+
+  <div class="credit-card" onclick="openCreditModal()">
+    <h3>My Credit Score</h3>
+    <div class="gauge">
+      <div class="gauge-label">Gauge Chart</div>
+      <div class="gauge-score">700</div>
+      <div class="gauge-status green">Very Good</div>
+    </div>
+    <p class="credit-help">Tap to view full details</p>
+  </div>
+</div>
+
+<!-- Credit Score Modal -->
+<div id="creditModal" class="modal hidden" onclick="closeModalOutside(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <h3 class="modal-title">Your Credit Score</h3>
+    <div class="modal-score">750</div>
+    <div class="modal-status">Very Good</div>
+    <p class="modal-date">Updated: July 23, 2023</p>
+    <button class="btn-full">View Full Details</button>
+    <p class="modal-refresh">Refreshes in 28–30 days</p>
+    <button class="modal-close" onclick="closeCreditModal()">Close</button>
+  </div>
+</div>
+
+
+
+<!--  -->
+
+<!-- SETTINGS SECTION -->
+<div id="settings-section" class="screen">
+  <h2 class="section-title">Settings</h2>
+
+  <!-- Personal Info -->
+  <div class="settings-group">
+    <h4>Personal information</h4>
+
+    <label>Email</label>
+    <div class="input-edit">
+      <input type="email" value="email@gmail.com" readonly />
+      <button onclick="editField(this)">✏️</button>
     </div>
 
-    <!-- SETTINGS SECTION -->
-    <div id="settings-section" class="screen">
-      <h2 class="section-title">Settings</h2>
-      <p class="placeholder-text">⚙️ Manage your app preferences, notification settings, and privacy options here.</p>
+    <label>Password</label>
+    <div class="input-edit">
+      <input type="password" value="**********" readonly />
+      <button onclick="editField(this)">✏️</button>
     </div>
+
+    <label>Phone number</label>
+    <div class="input-edit">
+      <input type="tel" value="+639998887777" readonly />
+      <button onclick="editField(this)">✏️</button>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- Appearance -->
+  <div class="settings-group">
+    <h4>Appearance</h4>
+    <div class="toggle-row">
+      <label>Darkmode</label>
+      <label class="switch">
+        <input type="checkbox" checked />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- About -->
+  <div class="settings-group">
+    <h4>About</h4>
+    <p><strong>App version</strong><span style="float:right;">v1.0.0.0</span></p>
+    <p><strong>Developer</strong><span style="float:right;">NDSTOC</span></p>
+    <p><strong>Contractor</strong><span style="float:right;">Bank</span></p>
+    <p><strong>Contact developer</strong><span style="float:right;">dev@contact.cm</span></p>
+  </div>
+
+  <hr />
+
+  <!-- Logout -->
+  <div style="margin-top: 1rem; text-align: left;">
+    <button onclick="handleLogout()" style="color: red; background: none; border: none; font-size: 1rem;">Logout</button>
+  </div>
+</div>
+
 
     <!-- BOTTOM NAVIGATION -->
     <nav class="bottom-nav">
