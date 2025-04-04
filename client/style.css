@@ -633,3 +633,178 @@ body {
   color: #333;
   cursor: default;
 }
+
+
+/*  settings / about page*/
+.settings-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-edit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-edit input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #1e293b;
+  color: white;
+}
+
+.input-edit button {
+  background: #1e40af;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Toggle switch style */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #666;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #22c55e;
+}
+
+input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+
+
+/* ======= Updated Paluwagan Section Styles ======= */
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-icon {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.styled-box {
+  background-color: #1e293b;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.circle-badge {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.circle-badge.green {
+  background-color: #22c55e;
+}
+
+.circle-badge.yellow {
+  background-color: #facc15;
+  color: #000;
+}
+
+.circle-details {
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+.circle-details h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.circle-desc,
+.members {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0.2rem 0;
+}
+
+.status-text.green {
+  color: #22c55e;
+  font-size: 0.85rem;
+}
+
+.status-text.yellow {
+  color: #facc15;
+  font-size: 0.85rem;
+}
+
+.highlight {
+  color: #22c55e;
+}
+
+.amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.styled-table th {
+  background-color: #1e40af;
+  color: #fff;
+}
