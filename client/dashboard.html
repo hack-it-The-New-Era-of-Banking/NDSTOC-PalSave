@@ -9,19 +9,26 @@
 <body>
   <div class="app-container">
 
-    <!-- HOME SECTION -->
+    <!-- ============================
+         HOME SECTION 
+    ============================= -->
     <div id="home-section" class="screen active">
       <h2>Welcome, User!</h2>
 
+      <!-- Total Payout Card -->
       <div class="wallet-balance-card" style="background:#22c55e;">
         <h1>₱8,000</h1>
         <p>Total payout</p>
       </div>
 
-      <p class="next-payout" style="text-align:center; border-bottom: 1px solid #444; padding-bottom: 1rem;">Next payout in 3 days</p>
+      <p class="next-payout" style="text-align:center; border-bottom: 1px solid #444; padding-bottom: 1rem;">
+        Next payout in 3 days
+      </p>
 
+      <!-- Active Circles -->
       <h3 class="section-title" style="text-align:left; margin-top:1rem;">Active Circles</h3>
 
+      <!-- Circle 1 -->
       <div class="circle-card green-card">
         <div class="circle-count">1/4</div>
         <div class="circle-info">
@@ -31,6 +38,7 @@
         <button class="btn-sm">Track</button>
       </div>
 
+      <!-- Circle 2 -->
       <div class="circle-card yellow-card">
         <div class="circle-count">3/5</div>
         <div class="circle-info">
@@ -41,68 +49,146 @@
       </div>
     </div>
 
-    
-    <!-- PALUWAGAN SECTION -->
-  <!-- PALUWAGAN SECTION -->
-  <div id="paluwagan-section" class="screen">
-    <h2 class="section-title">Paluwagan</h2>
+    <!-- ============================
+         PALUWAGAN SECTION 
+    ============================= -->
+    <div id="paluwagan-section" class="screen">
+      <h2>Paluwagan</h2>
 
-    <!-- Circles Joined -->
-    <div style="text-align: left; margin-bottom: 1.5rem;">
-      <h3 style="margin-bottom: 0.2rem;"><strong>2/5</strong></h3>
-      <p style="margin: 0;">Circles joined</p>
-      <small style="color: #bbb;">You can join within the circle limit.</small>
-    </div>
-
-    <!-- Current Circles -->
-    <h3 style="margin-bottom: 0.8rem;">Current Circles</h3>
-
-    <div class="circle-card green">
-      <div>
-        <div class="circle-count" style="background:#22c55e; color:#fff;">1/4</div>
-        <h4 style="margin: 0.5rem 0 0;">Iber’s Circle</h4>
-        <p style="margin: 0.2rem 0; font-size: 0.85rem;">₱1,000/3 • ₱4,000/3</p>
-        <p style="color: #22c55e; font-size: 0.85rem; margin-top: 0.2rem;">Paid for this cycle.</p>
+      <!-- Overview Card -->
+      <div class="overview-card">
+        <h1>2/5</h1>
+        <p>Circles joined</p>
+        <small>You can join within the circle limit.</small>
       </div>
-      <button class="btn-small" onclick="showScreen('circle-participant')">Track</button>
-    </div>
 
-    <div class="circle-card yellow">
-      <div>
-        <div class="circle-count" style="background:#facc15; color:#000;">3/5</div>
-        <h4 style="margin: 0.5rem 0 0;">Robbies’ Circle</h4>
-        <p style="margin: 0.2rem 0; font-size: 0.85rem;">₱1,000/3 • ₱4,000/3</p>
-        <p style="color: #facc15; font-size: 0.85rem; margin-top: 0.2rem;">Due this week!</p>
+      <!-- Contribution Cycle -->
+      <div class="contribution-box">
+        <div>
+          <h3>Current Contribution Cycle</h3>
+        </div>
+        <div class="contribution-amount">
+          <span>₱1,000</span>
+          <button class="btn-small yellow">Contribute</button>
+        </div>
       </div>
-      <button class="btn-small" onclick="alert('Contribute action simulated')">Contribute</button>
-    </div>
 
-    <!-- Circles to Join -->
-    <h3 style="margin-top: 2rem;">Circles to Join</h3>
+      <hr />
 
-    <div class="circle-card join">
-      <div>
-        <div class="circle-count" style="background:#22c55e; color:#fff;">👥 4</div>
-        <h4 style="margin: 0.5rem 0 0;">Jasper’s Circle</h4>
-        <p style="margin: 0.2rem 0; font-size: 0.85rem;">₱1,000/3 • ₱4,000/3</p>
+      <!-- Current Circles -->
+      <h3>Current Circles</h3>
+
+      <!-- Circle 1 -->
+      <div class="circle-card green">
+        <div class="circle-info">
+          <div class="circle-count">1/4</div>
+          <div>
+            <h4>Iber’s Circle</h4>
+            <p>₱1,000 / 3 • ₱4,000 / 3</p>
+            <p>👥 4</p>
+            <p class="status success">Paid for this cycle.</p>
+          </div>
+        </div>
+        <button class="btn-small" onclick="showScreen('circle-participant')">Track</button>
       </div>
-      <button class="btn-small" onclick="showScreen('circle-nonparticipant')">Join</button>
-    </div>
 
-    <div class="circle-card join">
-      <div>
-        <div class="circle-count" style="background:#22c55e; color:#fff;">👥 4</div>
-        <h4 style="margin: 0.5rem 0 0;">Gelo’s Circle</h4>
-        <p style="margin: 0.2rem 0; font-size: 0.85rem;">₱1,000/3 • ₱4,000/3</p>
+      <!-- Circle 2 -->
+      <div class="circle-card yellow">
+        <div class="circle-info">
+          <div class="circle-count">3/5</div>
+          <div>
+            <h4>Robbies’ Circle</h4>
+            <p>₱1,000 / 3 • ₱4,000 / 3</p>
+            <p>👥 5</p>
+            <p class="status warning">Due this week!</p>
+          </div>
+        </div>
+        <button class="btn-small yellow" onclick="alert('Contribute action simulated')">Contribute</button>
       </div>
-      <button class="btn-small" onclick="alert(' Joined Gelo’s Circle')">Join</button>
+
+      <hr />
+
+      <!-- Paluwagan History -->
+      <h3>Paluwagan history</h3>
+      <table class="circle-history">
+        <thead>
+          <tr>
+            <th>Circle name</th>
+            <th>Payout</th>
+            <th>End date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Cristian’s Circle</td><td>₱8,000/7</td><td>12/07/2024</td></tr>
+          <tr><td>Dhan’s Circle</td><td>₱8,000/7</td><td>12/07/2024</td></tr>
+          <tr><td>Kyle’s Circle</td><td>₱8,000/7</td><td>12/07/2024</td></tr>
+        </tbody>
+      </table>
+
+      <hr />
+
+      <!-- Circles to Join -->
+      <h3>Circles to join</h3>
+
+      <!-- Joinable Circle 1 -->
+      <div class="circle-card join">
+        <div class="circle-info">
+          <div class="circle-count green">👥 4</div>
+          <div>
+            <h4>Jasper’s Circle</h4>
+            <p>₱1,000 / 3 • ₱4,000 / 3</p>
+          </div>
+        </div>
+        <button class="btn-small green" onclick="showScreen('circle-nonparticipant')">Join</button>
+      </div>
+
+      <!-- Joinable Circle 2 -->
+      <div class="circle-card join">
+        <div class="circle-info">
+          <div class="circle-count green">👥 4</div>
+          <div>
+            <h4>Gelo’s Circle</h4>
+            <p>₱1,000 / 3 • ₱4,000 / 3</p>
+          </div>
+        </div>
+        <button class="btn-small green" onclick="alert('✅ Joined Gelo’s Circle!')">Join</button>
+      </div>
     </div>
-  </div>
 
+    <!-- ============================
+         CIRCLE CREATION SECTION 
+    ============================= -->
+    <div id="circle-create" class="screen hidden">
+      <h2 class="section-title">Configure Circle</h2>
 
-<!--  -->
+      <label>Circle’s Name</label>
+      <input type="text" placeholder="Type here..." class="input" />
 
-    <!-- WALLET SECTION -->
+      <label>Payout</label>
+      <input type="number" placeholder="₱ e.g. 1,000" class="input" />
+
+      <label>Payout cycle frequency</label>
+      <div class="btn-group">
+        <button class="btn-small">3 days</button>
+        <button class="btn-small">7 days</button>
+        <button class="btn-small">14 days</button>
+      </div>
+
+      <label>Participants</label>
+      <div class="participants-control">
+        <button onclick="adjustParticipants(-1)">−</button>
+        <span id="participant-count">2</span>
+        <button onclick="adjustParticipants(1)">+</button>
+      </div>
+      <p style="text-align:center; margin-top: 0.5rem;">Participants</p>
+
+      <button class="btn-full green" onclick="alert('Circle created!')">Create circle</button>
+      <button class="btn-secondary" onclick="showSection('paluwagan-section')">← Back</button>
+    </div>
+
+    <!-- ============================
+         WALLET SECTION 
+    ============================= -->
     <div id="wallet-section" class="screen">
       <h2 class="section-title">Wallet</h2>
 
@@ -111,6 +197,7 @@
         <p>Available balance</p>
       </div>
 
+      <!-- Wallet Actions -->
       <div class="wallet-actions">
         <div class="wallet-action">
           <img src="icons/qr-code.png" alt="QR withdrawal">
@@ -126,6 +213,7 @@
         </div>
       </div>
 
+      <!-- Transaction History -->
       <h3 class="wallet-subtitle">Transactions</h3>
       <table class="wallet-table">
         <thead>
@@ -143,117 +231,116 @@
       </table>
     </div>
 
-    <!-- REWARDS SECTION -->
-    <!-- <div id="rewards-section" class="screen">
-      <h2 class="section-title">Rewards</h2>
-      <p class="placeholder-text">🎁 Earn rewards for consistent contributions. Claim bonus cycles and cashback here.</p>
-    </div> -->
+    <!-- ============================
+         REWARDS / PROFILE SECTION 
+    ============================= -->
+    <div id="rewards-section" class="screen active">
+      <h2 class="section-title">My Profile</h2>
 
-<!-- SETTINGS// reward now SECTION -->
-<div id="rewards-section" class="screen active">
-  <h2 class="section-title">My Profile</h2>
+      <!-- Profile Header -->
+      <div class="profile-header-card">
+        <div class="profile-header-left">
+          <div class="profile-avatar-img"></div>
+          <div>
+            <h3 class="profile-username">Frank Abegnale</h3>
+            <p class="profile-role">Member</p>
+          </div>
+        </div>
+        <button class="edit-btn">Edit</button>
+      </div>
 
-  <div class="profile-header-card">
-    <div class="profile-header-left">
-      <div class="profile-avatar-img"></div>
-      <div>
-        <h3 class="profile-username">Frank Abegnale</h3>
-        <p class="profile-role">Member</p>
+      <!-- Credit Score Card -->
+      <div class="credit-card" onclick="openCreditModal()">
+        <h3>My Credit Score</h3>
+        <div class="gauge">
+          <div class="gauge-label">Gauge Chart</div>
+          <div class="gauge-score">700</div>
+          <div class="gauge-status green">Very Good</div>
+        </div>
+        <p class="credit-help">Tap to view full details</p>
       </div>
     </div>
-    <button class="edit-btn">Edit</button>
-  </div>
 
-  <div class="credit-card" onclick="openCreditModal()">
-    <h3>My Credit Score</h3>
-    <div class="gauge">
-      <div class="gauge-label">Gauge Chart</div>
-      <div class="gauge-score">700</div>
-      <div class="gauge-status green">Very Good</div>
-    </div>
-    <p class="credit-help">Tap to view full details</p>
-  </div>
-</div>
-
-<!-- Credit Score Modal -->
-<div id="creditModal" class="modal hidden" onclick="closeModalOutside(event)">
-  <div class="modal-content" onclick="event.stopPropagation()">
-    <h3 class="modal-title">Your Credit Score</h3>
-    <div class="modal-score">750</div>
-    <div class="modal-status">Very Good</div>
-    <p class="modal-date">Updated: July 23, 2023</p>
-    <button class="btn-full">View Full Details</button>
-    <p class="modal-refresh">Refreshes in 28–30 days</p>
-    <button class="modal-close" onclick="closeCreditModal()">Close</button>
-  </div>
-</div>
-
-
-
-<!--  -->
-
-<!-- SETTINGS SECTION -->
-<div id="settings-section" class="screen">
-  <h2 class="section-title">Settings</h2>
-
-  <!-- Personal Info -->
-  <div class="settings-group">
-    <h4>Personal information</h4>
-
-    <label>Email</label>
-    <div class="input-edit">
-      <input type="email" value="email@gmail.com" readonly />
-      <button onclick="editField(this)">✏️</button>
+    <!-- Credit Modal -->
+    <div id="creditModal" class="modal hidden" onclick="closeModalOutside(event)">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <h3 class="modal-title">Your Credit Score</h3>
+        <div class="modal-score">750</div>
+        <div class="modal-status">Very Good</div>
+        <p class="modal-date">Updated: July 23, 2023</p>
+        <button class="btn-full">View Full Details</button>
+        <p class="modal-refresh">Refreshes in 28–30 days</p>
+        <button class="modal-close" onclick="closeCreditModal()">Close</button>
+      </div>
     </div>
 
-    <label>Password</label>
-    <div class="input-edit">
-      <input type="password" value="**********" readonly />
-      <button onclick="editField(this)">✏️</button>
+    <!-- ============================
+         SETTINGS SECTION 
+    ============================= -->
+    <div id="settings-section" class="screen">
+      <h2 class="section-title">Settings</h2>
+
+      <!-- Personal Info -->
+      <div class="settings-group">
+        <h4>Personal information</h4>
+
+        <label>Email</label>
+        <div class="input-edit">
+          <input type="email" value="email@gmail.com" readonly />
+          <button onclick="editField(this)">✏️</button>
+        </div>
+
+        <label>Password</label>
+        <div class="input-edit">
+          <input type="password" value="**********" readonly />
+          <button onclick="editField(this)">✏️</button>
+        </div>
+
+        <label>Phone number</label>
+        <div class="input-edit">
+          <input type="tel" value="+639998887777" readonly />
+          <button onclick="editField(this)">✏️</button>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Appearance Settings -->
+      <div class="settings-group">
+        <h4>Appearance</h4>
+        <div class="toggle-row">
+          <label>Darkmode</label>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- About the App -->
+      <div class="settings-group">
+        <h4>About</h4>
+        <p><strong>App version</strong><span style="float:right;">v1.0.0.0</span></p>
+        <p><strong>Developer</strong><span style="float:right;">NDSTOC</span></p>
+        <p><strong>Contractor</strong><span style="float:right;">Bank</span></p>
+        <p><strong>Contact developer</strong><span style="float:right;">dev@contact.cm</span></p>
+      </div>
+
+      <hr />
+
+      <!-- Logout -->
+      <div style="margin-top: 1rem; text-align: left;">
+        <button onclick="handleLogout()" style="color: red; background: none; border: none; font-size: 1rem;">
+          Logout
+        </button>
+      </div>
     </div>
 
-    <label>Phone number</label>
-    <div class="input-edit">
-      <input type="tel" value="+639998887777" readonly />
-      <button onclick="editField(this)">✏️</button>
-    </div>
-  </div>
-
-  <hr />
-
-  <!-- Appearance -->
-  <div class="settings-group">
-    <h4>Appearance</h4>
-    <div class="toggle-row">
-      <label>Darkmode</label>
-      <label class="switch">
-        <input type="checkbox" checked />
-        <span class="slider round"></span>
-      </label>
-    </div>
-  </div>
-
-  <hr />
-
-  <!-- About -->
-  <div class="settings-group">
-    <h4>About</h4>
-    <p><strong>App version</strong><span style="float:right;">v1.0.0.0</span></p>
-    <p><strong>Developer</strong><span style="float:right;">NDSTOC</span></p>
-    <p><strong>Contractor</strong><span style="float:right;">Bank</span></p>
-    <p><strong>Contact developer</strong><span style="float:right;">dev@contact.cm</span></p>
-  </div>
-
-  <hr />
-
-  <!-- Logout -->
-  <div style="margin-top: 1rem; text-align: left;">
-    <button onclick="handleLogout()" style="color: red; background: none; border: none; font-size: 1rem;">Logout</button>
-  </div>
-</div>
-
-
-    <!-- BOTTOM NAVIGATION -->
+    <!-- ============================
+         BOTTOM NAVIGATION 
+    ============================= -->
     <nav class="bottom-nav">
       <a onclick="showSection('home-section')" class="nav-item selected" data-section="home-section">
         <img src="icons/house.png" alt="Home" />
