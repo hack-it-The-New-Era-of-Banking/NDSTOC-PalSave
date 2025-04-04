@@ -52,108 +52,105 @@
     <!-- ============================
          PALUWAGAN SECTION 
     ============================= -->
-    <div id="paluwagan-section" class="screen">
-      <h2>Paluwagan</h2>
 
-      <!-- Overview Card -->
-      <div class="overview-card">
-        <h1>2/5</h1>
-        <p>Circles joined</p>
-        <small>You can join within the circle limit.</small>
-      </div>
+  <!-- PALUWAGAN SECTION -->
+  <div id="paluwagan-section" class="screen">
 
-      <!-- Contribution Cycle -->
-      <div class="contribution-box">
-        <div>
-          <h3>Current Contribution Cycle</h3>
-        </div>
-        <div class="contribution-amount">
-          <span>₱1,000</span>
-          <button class="btn-small yellow">Contribute</button>
-        </div>
-      </div>
+    <h2>Paluwagan</h2>
 
-      <hr />
-
-      <!-- Current Circles -->
-      <h3>Current Circles</h3>
-
-      <!-- Circle 1 -->
-      <div class="circle-card green">
-        <div class="circle-info">
-          <div class="circle-count">1/4</div>
-          <div>
-            <h4>Iber’s Circle</h4>
-            <p>₱1,000 / 3 • ₱4,000 / 3</p>
-            <p>👥 4</p>
-            <p class="status success">Paid for this cycle.</p>
-          </div>
-        </div>
-        <button class="btn-small" onclick="showScreen('circle-participant')">Track</button>
-      </div>
-
-      <!-- Circle 2 -->
-      <div class="circle-card yellow">
-        <div class="circle-info">
-          <div class="circle-count">3/5</div>
-          <div>
-            <h4>Robbies’ Circle</h4>
-            <p>₱1,000 / 3 • ₱4,000 / 3</p>
-            <p>👥 5</p>
-            <p class="status warning">Due this week!</p>
-          </div>
-        </div>
-        <button class="btn-small yellow" onclick="alert('Contribute action simulated')">Contribute</button>
-      </div>
-
-      <hr />
-
-      <!-- Paluwagan History -->
-      <h3>Paluwagan history</h3>
-      <table class="circle-history">
-        <thead>
-          <tr>
-            <th>Circle name</th>
-            <th>Payout</th>
-            <th>End date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Cristian’s Circle</td><td>₱8,000/7</td><td>12/07/2024</td></tr>
-          <tr><td>Dhan’s Circle</td><td>₱8,000/7</td><td>12/07/2024</td></tr>
-          <tr><td>Kyle’s Circle</td><td>₱8,000/7</td><td>12/07/2024</td></tr>
-        </tbody>
-      </table>
-
-      <hr />
-
-      <!-- Circles to Join -->
-      <h3>Circles to join</h3>
-
-      <!-- Joinable Circle 1 -->
-      <div class="circle-card join">
-        <div class="circle-info">
-          <div class="circle-count green">👥 4</div>
-          <div>
-            <h4>Jasper’s Circle</h4>
-            <p>₱1,000 / 3 • ₱4,000 / 3</p>
-          </div>
-        </div>
-        <button class="btn-small green" onclick="showScreen('circle-nonparticipant')">Join</button>
-      </div>
-
-      <!-- Joinable Circle 2 -->
-      <div class="circle-card join">
-        <div class="circle-info">
-          <div class="circle-count green">👥 4</div>
-          <div>
-            <h4>Gelo’s Circle</h4>
-            <p>₱1,000 / 3 • ₱4,000 / 3</p>
-          </div>
-        </div>
-        <button class="btn-small green" onclick="alert('✅ Joined Gelo’s Circle!')">Join</button>
-      </div>
+    <!-- Overview Card -->
+    <div class="overview-card highlight-card">
+      <h1>2/5</h1>
+      <p>Circles joined</p>
+      <small>You can join within the circle limit.</small>
     </div>
+
+    <!-- Current Contribution Cycle -->
+    <div class="section-header">
+      <h3>Current Contribution Cycle</h3>
+      <span class="info-icon">ℹ️</span>
+    </div>
+    <div class="contribution-box styled-box">
+      <span class="amount">₱1,000</span>
+      <button class="btn-small yellow">Contribute</button>
+    </div>
+
+    <hr />
+
+    <!-- Current Circles -->
+    <h3>Current Circles</h3>
+
+    <!-- Iber's Circle -->
+    <div class="circle-card styled-box">
+      <div class="circle-badge green">1/4</div>
+      <div class="circle-details">
+        <h4>Iber’s Circle</h4>
+        <p class="circle-desc">₱1,000 / 3 • ₱4,000 / 3</p>
+        <p class="members">👥 4</p>
+        <p class="status-text green">Paid for this cycle.</p>
+      </div>
+      <button class="btn-small green">Track</button>
+    </div>
+
+    <!-- Robbies’ Circle -->
+    <div class="circle-card styled-box">
+      <div class="circle-badge yellow">3/5</div>
+      <div class="circle-details">
+        <h4>Robbies’ Circle</h4>
+        <p class="circle-desc">₱1,000 / 3 • ₱4,000 / 3</p>
+        <p class="members">👥 5</p>
+        <p class="status-text yellow">Due this week!</p>
+      </div>
+      <button class="btn-small yellow">Contribute</button>
+    </div>
+
+    <hr />
+
+    <!-- Paluwagan History -->
+    <h3>Paluwagan history</h3>
+    <table class="circle-history styled-table">
+      <thead>
+        <tr>
+          <th>Circle name</th>
+          <th>Payout</th>
+          <th>End date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Cristian’s Circle</td><td>₱8,000/7</td><td>12/07/2024</td></tr>
+        <tr><td>Dhan’s Circle</td><td>₱8,000/7</td><td>12/07/2024</td></tr>
+        <tr><td>Kyle’s Circle</td><td>₱8,000/7</td><td>12/07/2024</td></tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <!-- Circles to Join -->
+    <div class="section-header">
+      <h3>Circles to join</h3>
+      <span class="info-icon">ℹ️</span>
+    </div>
+
+    <!-- Joinable Circles -->
+    <div class="circle-card styled-box">
+      <div class="circle-badge green">👥 4</div>
+      <div class="circle-details">
+        <h4>Jasper’s Circle</h4>
+        <p class="circle-desc">₱1,000 / 3 • <span class="highlight">₱4,000 / 3</span></p>
+      </div>
+      <button class="btn-small green">Join</button>
+    </div>
+
+    <div class="circle-card styled-box">
+      <div class="circle-badge green">👥 4</div>
+      <div class="circle-details">
+        <h4>Gelo’s Circle</h4>
+        <p class="circle-desc">₱1,000 / 3 • <span class="highlight">₱4,000 / 3</span></p>
+      </div>
+      <button class="btn-small green">Join</button>
+    </div>
+
+  </div>
 
     <!-- ============================
          CIRCLE CREATION SECTION 
@@ -356,7 +353,7 @@
       </a>
       <a onclick="showSection('rewards-section')" class="nav-item" data-section="rewards-section">
         <img src="icons/gift.png" alt="Rewards" />
-        <span>Rewards</span>
+        <span>Profile</span>
       </a>
       <a onclick="showSection('settings-section')" class="nav-item" data-section="settings-section">
         <img src="icons/settings.png" alt="Settings" />
