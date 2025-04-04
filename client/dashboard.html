@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paluwagan App - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- HOME SECTION -->
+    <div id="home-section" class="screen active">
+      <h2>Welcome, User!</h2>
+
+      <div class="wallet-balance-card" style="background:#22c55e;">
+        <h1>₱8,000</h1>
+        <p>Total payout</p>
+      </div>
+
+      <p class="next-payout" style="text-align:center; border-bottom: 1px solid #444; padding-bottom: 1rem;">Next payout in 3 days</p>
+
+      <h3 class="section-title" style="text-align:left; margin-top:1rem;">Active Circles</h3>
+
+      <div class="circle-card green-card">
+        <div class="circle-count">1/4</div>
+        <div class="circle-info">
+          <h4>Iber’s Circle</h4>
+          <p>₱1,000 / 3 • ₱4,000/3 <br/> 👥 4<br/><span style="color: #22c55e;">Paid for this cycle.</span></p>
+        </div>
+        <button class="btn-sm">Track</button>
+      </div>
+
+      <div class="circle-card yellow-card">
+        <div class="circle-count">3/5</div>
+        <div class="circle-info">
+          <h4>Robbies’ Circle</h4>
+          <p>₱1,000 / 3 • ₱4,000/3 <br/> 👥 5<br/><span style="color: #facc15;">Due this week!</span></p>
+        </div>
+        <button class="btn-sm yellow">Contribute</button>
+      </div>
+    </div>
+
+    
+    <!-- PALUWAGAN SECTION -->
+  <!-- PALUWAGAN SECTION -->
+  <div id="paluwagan-section" class="screen">
+    <h2 class="section-title">Paluwagan</h2>
+
+    <!-- Circles Joined -->
+    <div style="text-align: left; margin-bottom: 1.5rem;">
+      <h3 style="margin-bottom: 0.2rem;"><strong>2/5</strong></h3>
+      <p style="margin: 0;">Circles joined</p>
+      <small style="color: #bbb;">You can join within the circle limit.</small>
+    </div>
+
+    <!-- Current Circles -->
+    <h3 style="margin-bottom: 0.8rem;">Current Circles</h3>
+
+    <div class="circle-card green">
+      <div>
+        <div class="circle-count" style="background:#22c55e; color:#fff;">1/4</div>
+        <h4 style="margin: 0.5rem 0 0;">Iber’s Circle</h4>
+        <p style="margin: 0.2rem 0; font-size: 0.85rem;">₱1,000/3 • ₱4,000/3</p>
+        <p style="color: #22c55e; font-size: 0.85rem; margin-top: 0.2rem;">Paid for this cycle.</p>
+      </div>
+      <button class="btn-small" onclick="showScreen('circle-participant')">Track</button>
+    </div>
+
+    <div class="circle-card yellow">
+      <div>
+        <div class="circle-count" style="background:#facc15; color:#000;">3/5</div>
+        <h4 style="margin: 0.5rem 0 0;">Robbies’ Circle</h4>
+        <p style="margin: 0.2rem 0; font-size: 0.85rem;">₱1,000/3 • ₱4,000/3</p>
+        <p style="color: #facc15; font-size: 0.85rem; margin-top: 0.2rem;">Due this week!</p>
+      </div>
+      <button class="btn-small" onclick="alert('✅ Contribute action simulated')">Contribute</button>
+    </div>
+
+    <!-- Circles to Join -->
+    <h3 style="margin-top: 2rem;">Circles to Join</h3>
+
+    <div class="circle-card join">
+      <div>
+        <div class="circle-count" style="background:#22c55e; color:#fff;">👥 4</div>
+        <h4 style="margin: 0.5rem 0 0;">Jasper’s Circle</h4>
+        <p style="margin: 0.2rem 0; font-size: 0.85rem;">₱1,000/3 • ₱4,000/3</p>
+      </div>
+      <button class="btn-small" onclick="showScreen('circle-nonparticipant')">Join</button>
+    </div>
+
+    <div class="circle-card join">
+      <div>
+        <div class="circle-count" style="background:#22c55e; color:#fff;">👥 4</div>
+        <h4 style="margin: 0.5rem 0 0;">Gelo’s Circle</h4>
+        <p style="margin: 0.2rem 0; font-size: 0.85rem;">₱1,000/3 • ₱4,000/3</p>
+      </div>
+      <button class="btn-small" onclick="alert('✅ Joined Gelo’s Circle')">Join</button>
+    </div>
+  </div>
+
+
+<!--  -->
+
+    <!-- WALLET SECTION -->
+    <div id="wallet-section" class="screen">
+      <h2 class="section-title">Wallet</h2>
+
+      <div class="wallet-balance-card">
+        <h1>₱8,000</h1>
+        <p>Available balance</p>
+      </div>
+
+      <div class="wallet-actions">
+        <div class="wallet-action">
+          <img src="icons/qr-code.png" alt="QR withdrawal">
+          <span>QR withdrawal</span>
+        </div>
+        <div class="wallet-action">
+          <img src="icons/landmark.png" alt="Fund transfer">
+          <span>Fund transfer</span>
+        </div>
+        <div class="wallet-action">
+          <img src="icons/banknote-arrow-up.png" alt="Deposit">
+          <span>Deposit</span>
+        </div>
+      </div>
+
+      <h3 class="wallet-subtitle">Transactions</h3>
+      <table class="wallet-table">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Balance</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>QR withdrawal</td><td>-₱8,000</td><td>12/07/2024</td></tr>
+          <tr><td>Fund transfer</td><td>-₱8,000</td><td>12/07/2024</td></tr>
+          <tr><td>Deposit</td><td>+₱8,000</td><td>12/07/2024</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- REWARDS SECTION -->
+    <div id="rewards-section" class="screen">
+      <h2 class="section-title">Rewards</h2>
+      <p class="placeholder-text">🎁 Earn rewards for consistent contributions. Claim bonus cycles and cashback here.</p>
+    </div>
+
+    <!-- SETTINGS SECTION -->
+    <div id="settings-section" class="screen">
+      <h2 class="section-title">Settings</h2>
+      <p class="placeholder-text">⚙️ Manage your app preferences, notification settings, and privacy options here.</p>
+    </div>
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-nav">
+      <a onclick="showSection('home-section')" class="nav-item selected" data-section="home-section">
+        <img src="icons/house.png" alt="Home" />
+        <span>Home</span>
+      </a>
+      <a onclick="showSection('paluwagan-section')" class="nav-item" data-section="paluwagan-section">
+        <img src="icons/users.png" alt="Paluwagan" />
+        <span>Paluwagan</span>
+      </a>
+      <a onclick="showSection('wallet-section')" class="nav-item" data-section="wallet-section">
+        <img src="icons/wallet-minimal.png" alt="Wallet" />
+        <span>Wallet</span>
+      </a>
+      <a onclick="showSection('rewards-section')" class="nav-item" data-section="rewards-section">
+        <img src="icons/gift.png" alt="Rewards" />
+        <span>Rewards</span>
+      </a>
+      <a onclick="showSection('settings-section')" class="nav-item" data-section="settings-section">
+        <img src="icons/settings.png" alt="Settings" />
+        <span>Settings</span>
+      </a>
+    </nav>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
